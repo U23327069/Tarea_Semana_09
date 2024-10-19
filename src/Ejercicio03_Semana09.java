@@ -22,10 +22,11 @@ public class Ejercicio03_Semana09 {
             }
         }        
         double promedioCompras = (double) totalCompras / n;        
-        //Mostrar el total, promedio, mayor y menor compra
+        //Mostramos los resultados de promedio, mayor y menor compra
         System.out.println("El total de las compras es: " + totalCompras);
         System.out.println("El promedio de las compras es: " + promedioCompras);
         System.out.println("La mayor compra es: " + compraMayor);
         System.out.println("La menor compra es: " + compraMenor);
+        //Fin del programa
     }
 }
