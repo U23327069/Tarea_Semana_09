@@ -3,29 +3,29 @@ public class Ejercicio04_Semana09 {
         public static void main(String[] args) {
         Scanner lectura=new Scanner(System.in);
         String[] nombres = new String[5];        
-        //Ingresar los nombres de las 5 personas
+        //Ingresaremos los 5 nombres
         for (int i = 0; i < 5; i++) {
             System.out.print("Ingrese el nombre de la persona " + (i + 1) + ": ");
             nombres[i] = lectura.nextLine();
         }        
         System.out.print("Ingrese el nombre que desea buscar: ");
-        String nombreBuscado = lectura.nextLine();
-        
-        //Variable para verificar si el nombre existe y encontrar la posición
+        String nombreBuscado = lectura.nextLine();        
+        //Agregamos la variable para verificar si el nombre existe
         boolean encontrado = false;
         int posicion = -1;
         for (int i = 0; i < 5; i++) {
             if (nombres[i].equalsIgnoreCase(nombreBuscado)) {
                 encontrado = true;
-                posicion = i;  // Guardar la posición donde se encontró el nombre
+                posicion = i;
                 break;
             }
         }
-        //Mostrar el resultado de la búsqueda
+        //Salida de datos
         if (encontrado) {
-            System.out.println("La persona " + nombreBuscado + " existe en el arreglo en la posición " + (posicion + 1) + ".");
+            System.out.println("La persona " + nombreBuscado + " existe " + (posicion + 1) + ".");
         } else {
-            System.out.println("La persona " + nombreBuscado + " no existe en el arreglo.");
+            System.out.println("La persona " + nombreBuscado + " no existe.");
+            //Fin del programa
         }
     }
 }
