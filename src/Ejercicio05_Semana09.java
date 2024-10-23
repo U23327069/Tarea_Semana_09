@@ -24,7 +24,7 @@ public class Ejercicio05_Semana09 {
             c[indexC] = b[i];
             indexC++;
         }        
-        //Mostrar los resultados del programa
+        //Mostrar los resultados del programa final
         System.out.println("\nValores del arreglo c intercalados:");
         for (int i = 0; i < 10; i++) {
             System.out.print(c[i] + " ");
